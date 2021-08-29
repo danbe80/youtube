@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Teko:wght@300;400;500&display=swap');
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Teko', sans-serif; 
+*/
+
+:root {
+	--text-color: #111;
+	--background-color: #f9f9f9;
+	--logo-color: #ff0000;
+	--border-color: rgba(148, 148, 148, 0.3);
+}
+body, html {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+a{
+	margin: 0;
+}
+h1{
+	margin: 0;
+}
+
+.header_bars{
+	width: 95%;
+	margin-left: 5%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header_logo{
+	width: 15%;
+	display: flex;
+	align-items: center;
+}
+.header_logo .logo{
+	font-size: 1.5rem;
+	padding: .5em;
+	color: #ff0000;
+}
+.header_logo .title {
+	font-family: 'Teko', sans-serif; 
+	font-weight: 500;
+	letter-spacing: -1px;
+}
+.header_logo .title sup{
+	font-size: .325em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.search_wrap {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.search_wrap .search_bars{
+	width: 80%;
+	border: 1px solid var(--border-color);
+	padding: .325em;
+	border-radius: 1%;
+	box-shadow: inset 1px 1px rgba(0, 0, 0, .1), inset 0 -1px rgba(0, 0, 0, .1) ;
+	
+}
+.search_wrap .keypad {
+	position: absolute;
+	right: 21%;
+	color: rgba(0, 0, 0, .7);
+}
+.search_wrap .search_btn{
+	width: 10%;
+	padding: .325em 0;
+	border: 1px solid var(--border-color);
+	background-color: rgba(236, 236, 236, 0.5);
+}
+.search_btn .search {
+	color: #aaa;
+}
+.search_wrap .mic {
+	padding: .5em .75em;
+	margin-left: .5em;
+	background-color: #f7f7f7;
+	border-radius: 50%;
+}
+
+.header_nav {
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.header_nav a {
+	margin: .5em 1em;
+}
+.header_nav .img {
+	margin-top: .325rem;
+	width: 2em;
+	border-radius: 50%;
+}
