@@ -1,43 +1,170 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	<script src="https://kit.fontawesome.com/670a6e2cd0.js" crossorigin="anonymous"></script>
-	<script defer src="script.js" ></script>
-	<title>Youtube Clone coding</title>
+	<script defer src="script.js"></script>
+	<title>Hyetube</title>
 </head>
+
 <body>
+<!-- header -->
+<header class="header_logo">
+	<div class="title_logo">
+		<i class="fab fa-youtube logo"></i>
+		<a href="#">
+			<span class="title">HyeTube</span>
+		</a>
+	</div>
 
-	<header class="header_bars">
+	<div class="search_info_login">
+		<i class="fa fa-search"></i>
+		<i class="fa fa-ellipsis-v"></i>
+		<button onsubmit="onLogin(return false)" class="login_btn"><i class="fa fa-user-circle"></i>로그인</button>
+	</div>
 
-		<section class="header_logo">
-			<i class="fab fa-youtube logo"></i>
-			<h1 class="title">Premium <sup>KR</sup></h1>
-		</section>
+</header>
 
+<!-- web 
+	<div class="side_menu">
+		<i class="fa fa-bars"></i>
+	</div>
+	<div class="title_logo">
+		<i class="fab fa-youtube youtube_icon"></i>
+		<a href="#" class="title">Premium</a> <sup>HR</sup>
+	</div>
 
-		<section class="search_wrap">
-			<input type="text" class="search_bars" placeholder="검색">
-			<i class="fa fa-keyboard keypad"></i>
-			<button class="search_btn"><i class="fa fa-search search"></i></button>
-			<i class="fa fa-microphone mic"></i>
-		</section>
+	<div class="search_bar">
+		<input type="text" class="search" placeholder="검색">
+		<button class="search_btn">
+			<i class="fas fa-search"></i>
+		</button>
+		<i class="fa fa-microphone mic"></i>
+		<i class="fa fa-keyboard keypad"></i>
+	</div>
 
+	<div class="icons">
+		<i class="fa fa-video"></i>
+		<i class="fa fa-th"></i>
+		<i class="fa fa-bell"></i>
+		<div class="img">
+			<img src="image/kuromi.jpg" alt="profile_photo">
+		</div>
+	</div>
+-->
 
-		<section class="header_nav">
-			<a href="#" class="video"><i class="fa fa-video"></i></a>
-			<a href="#" class="th"><i class="fa fa-th"></i></a>
-			<a href="#" class="notice"><i class="far fa-bell"></i></a>
-			<a href="#" class="profile">
-				<img src="image/kuromi.jpg" alt="profile_photo" class="img">
-			</a> 
-		</section>
+<!-- vedio section -->
+<section class="video">
+	<!-- <video src="https://youtu.be/LN5Z8kJK0So"></video> -->
+	<iframe width="375" height="212px" src="https://www.youtube.com/embed/LN5Z8kJK0So" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
 
-	</header>
+<!-- video info section -->
+<section class="title_action">
+	<div class="title_btn">
+		<span class="title">[ 이게.. 나? ]</span>
+		<i class="fa fa-angle-down more"></i>
+	</div>
+	<div class="view_action">
+		<p class="view">조회수 659만회 · 2017.9.16</p>
+		<ul class="action_wrap">
+			<li class="action">
+				<i class="far fa-thumbs-up"></i><span>8.7천</span></li>
+			<li class="action"><i class="far fa-thumbs-down"></i><span>867</span></li>
+			<li class="action"><i class="far fa-share-square"></i><span>공유</span></li>
+			<li class="action"><i class="fas fa-film"></i><span>만들기</span></li>
+			<li class="action"><i class="fas fa-download"></i><span>오프라인 저장</span></li>
+			<li class="action"><i class="far fa-plus-square"></i><span>저장</span></li>
+		</ul>
+	</div>
+</section>
+
+<!-- sub info -->
+<section class="sub_info">
+	<div class="info">
+		<div class="img_wrap">
+			<img src="image/kuromi.jpg" alt="profile">
+		</div>
+		<div class="sub_wrap">
+			<span class="name">Danbe</span>
+			<span class="sub_count">구독자 150만명</span>
+		</div>
+		<a href="#" class="sub_check">구독</a>
+		<i class="fa fa-bell"></i>
+	</div>
+	<div class="commentAndinput">
+			<div class="comment_countAndview">
+				<span class="comment_count">댓글 2,394</span>
+				<i class="fas fa-sort"></i>
+			</div>
+		<div class="comment_wrap">
+			<div class="comment_profile">
+				<img src="image/kuromi.jpg" alt="profile">
+			</div>
+			<input class="comment" type="text" placeholder="댓글 입력하기">
+			<button class="comment_submit">입력</button>
+		</div>
+	</div>
+</section>
+
+<!-- next video -->
+<section class="next">
+	<span class="next_video">다음 동영상</span>
+	<ul class="video_list">
+		<li class="item">
+			<div class="thumbnaill_wrap">
+				<img src="image/thumbnaill/thumbnaill1.webp" alt="thumbnaill" class="thumbnaill">
+			</div>
+			<div class="list_info">
+				<div class="img_wrap">
+					<img src="image/kuromi.jpg" alt="profile" class="profile_photo">
+				</div>
+				<div class="title_wrap">
+					<span class="title">[ 김진우가 된 김진우와 김진우 ]</span>
+					<span class="nameAndview">김진우 · 조회수 21만회</span>
+				</div>
+				<i class="fa fa-ellipsis-v"></i>
+			</div>
+		</li>
+		<li class="item">
+			<div class="thumbnaill_wrap">
+				<img src="image/thumbnaill/thumbnaill2.webp" alt="thumbnaill" class="thumbnaill">
+			</div>
+			<div class="list_info">
+				<div class="img_wrap">
+					<img src="image/kuromi.jpg" alt="profile" class="profile_photo">
+				</div>
+				<div class="title_wrap">
+					<span class="title">오랜만입니다</span>
+					<span class="nameAndview">김진우 · 조회수 22만회</span>
+				</div>
+				<i class="fa fa-ellipsis-v"></i>
+			</div>
+		</li>
+	
+		<li class="item">
+			<div class="thumbnaill_wrap">
+				<img src="image/thumbnaill/thumbnaill3.webp" alt="thumbnaill" class="thumbnaill">
+			</div>
+			<div class="list_info">
+				<div class="img_wrap">
+					<img src="image/kuromi.jpg" alt="profile" class="profile_photo">
+				</div>
+				<div class="title_wrap">
+					<span class="title">[ 널 조리돌림 할 수 있는 건 나뿐이다. ]</span>
+					<span class="nameAndview">김진우 · 조회수 29만회</span>
+				</div>
+				<i class="fa fa-ellipsis-v"></i>
+			</div>
+		</li>
+	</ul>
+</section>
 
 
 </body>
+
 </html>
