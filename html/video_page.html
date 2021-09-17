@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
 	<script src="https://kit.fontawesome.com/670a6e2cd0.js" crossorigin="anonymous"></script>
-	<script defer src="script.js"></script>
+	<script defer src="../script.js"></script>
 	<title>Hyetube</title>
 </head>
 
 <body>
 <!-- header -->
 <header class="header_logo">
+	<aside class="side_bar">
+		<i class="fa fa-bars"></i>
+	</aside>
+
 	<div class="title_logo">
 		<i class="fab fa-youtube logo"></i>
-		<a href="#">
+		<a href="http://127.0.0.1:5500/html/main_page.html">
 			<span class="title">HyeTube</span>
 		</a>
 	</div>
 
-	<div class="search_info_login">
+	<div class="search">
+		<input type="text" placeholder="검색" class="search_input">
 		<i class="fa fa-search"></i>
-		<i class="fa fa-ellipsis-v"></i>
-		<button onsubmit="onLogin(return false)" class="login_btn"><i class="fa fa-user-circle"></i>로그인</button>
+	</div>
+
+	<div class="auth_info">
+		<!-- 로그인 후  -->
+		<div class="profile_photo" style="display: none;>
+			<img src="../image/kuromi.jpg" alt="photo" class="img">
+		</div>
+		<!-- 로그아웃 후 -->
+		<a class="login_btn" href="http://127.0.0.1:5500/html/auth_page.html">
+			<i class="fa fa-sign-in-alt"></i>
+		</a>
 	</div>
 
 </header>
@@ -59,8 +72,9 @@
 
 <!-- vedio section -->
 <section class="video">
-	<!-- <video src="https://youtu.be/LN5Z8kJK0So"></video> -->
-	<iframe width="375" height="212px" src="https://www.youtube.com/embed/LN5Z8kJK0So" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="video_wrap">
+		<video src="<!-- 저장한 비디오 값 -->"></video>
+	</div>
 </section>
 
 <!-- video info section -->
@@ -87,7 +101,7 @@
 <section class="sub_info">
 	<div class="info">
 		<div class="img_wrap">
-			<img src="image/kuromi.jpg" alt="profile">
+			<img src="../image/kuromi.jpg" alt="profile">
 		</div>
 		<div class="sub_wrap">
 			<span class="name">Danbe</span>
@@ -103,7 +117,7 @@
 			</div>
 		<div class="comment_wrap">
 			<div class="comment_profile">
-				<img src="image/kuromi.jpg" alt="profile">
+				<img src="../image/kuromi.jpg" alt="profile">
 			</div>
 			<input class="comment" type="text" placeholder="댓글 입력하기">
 			<button class="comment_submit">입력</button>
@@ -117,11 +131,11 @@
 	<ul class="video_list">
 		<li class="item">
 			<div class="thumbnaill_wrap">
-				<img src="image/thumbnaill/thumbnaill1.webp" alt="thumbnaill" class="thumbnaill">
+				<img src="../image/thumbnaill/thumbnaill1.webp" alt="thumbnaill" class="thumbnaill">
 			</div>
 			<div class="list_info">
 				<div class="img_wrap">
-					<img src="image/kuromi.jpg" alt="profile" class="profile_photo">
+					<img src="../image/kuromi.jpg" alt="profile" class="profile_photo">
 				</div>
 				<div class="title_wrap">
 					<span class="title">[ 김진우가 된 김진우와 김진우 ]</span>
@@ -132,11 +146,11 @@
 		</li>
 		<li class="item">
 			<div class="thumbnaill_wrap">
-				<img src="image/thumbnaill/thumbnaill2.webp" alt="thumbnaill" class="thumbnaill">
+				<img src="../image/thumbnaill/thumbnaill2.webp" alt="thumbnaill" class="thumbnaill">
 			</div>
 			<div class="list_info">
 				<div class="img_wrap">
-					<img src="image/kuromi.jpg" alt="profile" class="profile_photo">
+					<img src="../image/kuromi.jpg" alt="profile" class="profile_photo">
 				</div>
 				<div class="title_wrap">
 					<span class="title">오랜만입니다</span>
@@ -148,11 +162,11 @@
 	
 		<li class="item">
 			<div class="thumbnaill_wrap">
-				<img src="image/thumbnaill/thumbnaill3.webp" alt="thumbnaill" class="thumbnaill">
+				<img src="../image/thumbnaill/thumbnaill3.webp" alt="thumbnaill" class="thumbnaill">
 			</div>
 			<div class="list_info">
 				<div class="img_wrap">
-					<img src="image/kuromi.jpg" alt="profile" class="profile_photo">
+					<img src="../image/kuromi.jpg" alt="profile" class="profile_photo">
 				</div>
 				<div class="title_wrap">
 					<span class="title">[ 널 조리돌림 할 수 있는 건 나뿐이다. ]</span>
@@ -166,5 +180,4 @@
 
 
 </body>
-
 </html>

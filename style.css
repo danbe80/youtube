@@ -7,15 +7,17 @@ font-family: 'Teko', sans-serif;
 
 :root {
 	--text-color: #111;
-	--mob-text-color: #f9f9f9;
+	--background-color: #fff;
+	--search-icon-color: #bbb;
+	--profile-border-color: #7e0000;
+
 	--mob-hover-color: #5071df;
-	--background-color: #f9f9f9;
-	--mob-background-color: #333;
 	--logo-color: #ff0000;
 	--sub-text-color: #ff0000;
 	--subing-text-color: #666;
 	--border-color: rgba(148, 148, 148, 0.3);
-	--login-btn-color: #5071df;
+	--login-btn-color: #a2b8ff;
+	--login-btn-hover-color: #5071df;
 }
 body, html {
 	font-size: 16px;
@@ -25,7 +27,7 @@ body, html {
 }
 a{
 	text-decoration: none;
-	color: var(--mob-text-color);
+	color: var(--text-color);
 	margin: 0;
 }
 ul {
@@ -40,16 +42,22 @@ h1{
 }
 /* header */
 .header_logo {
+	width: 97%;
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 	padding: .25em .5em;
-	background-color: var(--mob-background-color);
-	color: var(--mob-text-color);
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+.side_bar {
+	margin-right: .5em;
+	padding: .325em;
+	cursor: pointer;
 }
 .title_logo {
 	display: flex;
 	align-items: center;
+	margin-right: .5em;
 }
 .title_logo .logo {
 	color: var(--logo-color);
@@ -58,26 +66,43 @@ h1{
 .title_logo .title {
 	font-family: 'Teko', sans-serif; 
 }
-
-.search_info_login i:not(:last-child) {
-	padding: 0 .5em;
+.search {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--border-color);
+	padding: .1em .45em;
 }
-.search_info_login .login_btn {
+.search > i {
+	font-size: .875em;
+	color: var(--search-icon-color);
+}
+.search .search_input {
+	width: 100%;
+	border: none;
+}
+.auth_info .profile_photo {
+	width: 30px;
+	height: 30px;
+}
+.auth_info .profile_photo .img {
+	width: 100%;
+	border-radius: 50%;
+	border: 1px solid var(--profile-border-color);
+}
+.auth_info .login_btn {
+	width: 90%;
+	margin: 0 5%;
 	background-color: var(--mob-background-color);
 	color: var(--login-btn-color);
-	border: 1px solid var(--login-btn-color);
+	border: none;
 	padding: .325em;
 }
-.search_info_login .login_btn > i {
-	margin-right: .325em;
+.auth_info .login_btn > i {
 }
 /* button hover시 */
-.search_info_login i:not(:last-child):hover {
-	color: var(--mob-hover-color);
-}
-.search_info_login .login_btn:hover {
-	background-color: var(--mob-hover-color);
-	color: var(--mob-text-color);
+.auth_info .login_btn:hover {
+	color: var(--login-btn-hover-color);
 }
 
 /* vedio section */
