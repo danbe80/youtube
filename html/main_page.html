@@ -5,8 +5,38 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hyetube</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<script src="https://kit.fontawesome.com/670a6e2cd0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	
+	<header class="header_logo">
+		<aside class="side_bar">
+			<i class="fa fa-bars"></i>
+		</aside>
+
+		<div class="title_logo">
+			<i class="fab fa-youtube logo"></i>
+			<a href="#">
+				<span class="title">HyeTube</span>
+			</a>
+		</div>
+
+		<div class="search">
+			<input type="text" placeholder="검색" class="search_input">
+			<i class="fa fa-search"></i>
+		</div>
+
+		<div class="auth_info">
+			<!-- 로그인 후  -->
+			<div class="profile_photo" style="display: none;>
+				<img src="../image/kuromi.jpg" alt="photo" class="img">
+			</div>
+			<!-- 로그아웃 후 -->
+			<a class="login_btn" href="http://127.0.0.1:5500/html/auth_page.html">
+				<i class="fa fa-sign-in-alt"></i>
+			</a>
+		</div>
+	</header>
 </body>
 </html>
